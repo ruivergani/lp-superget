@@ -1,0 +1,25 @@
+// Typography
+
+h1,h2,h3,p{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -0.02em;
+}
+h1{
+    font-weight: bold;
+    font-size: 7.2rem;
+    line-height: 9.8rem;
+}
+h2{
+    font-weight: bold;
+    font-size: 5.6rem;
+    line-height: 7.6rem;
+}
+h3{
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 6.5rem;
+}
+p{ // Body/ Text/ 16-regular
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}

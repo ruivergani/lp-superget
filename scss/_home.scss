@@ -1,0 +1,221 @@
+.s-hero{
+    width: 100%;
+    height: 54.7rem;
+    background: #F22824;
+    background: #F22824 linear-gradient(350.43deg, #662C60 -83.52%, rgba(102, 44, 98, 0) 97.99%);
+    display: flex;
+    .container{
+        @include flex(row, center, space-between);
+        position: relative;
+        .main-text{
+            width: 100%;
+            max-width: 58rem;
+            @include flex(column, flex-start, flex-start);
+            h1{
+                font-weight: bold;
+                color: $white;
+                padding-bottom: 2.5rem;
+            }
+            .sub-text{
+                p{
+                    font-weight: 600;
+                    color: $white;
+                    position: relative;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                .strike{
+                    width: 100%;
+                    max-width: 13.5rem;
+                    del{
+                        text-decoration: line-through $secondary-brand  1px !important;
+                    }
+                }
+                
+                h2{
+                    color: $secondary-brand;
+                }
+            }
+            .emoji{
+                font-size: 1.9rem;
+                padding-top: 1.9rem;
+            }
+            .h-buttons{
+                width: 100%;
+                margin-top: 3.6rem;
+                @include flex(row, center, space-between);
+                .btn-secondary{
+                    font-weight: bold;
+                }
+                a{
+                    position: relative;
+                    @include flex(row, center, center);
+                    img{
+                        position: absolute;
+                        left: -69px;
+                        top: -16px;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: -0.02em;
+                        color: #FFFFFF;
+                        opacity: 0.9;
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .delivery-text{
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+                padding-top: 1.3rem;
+                letter-spacing: -0.01em;
+                color: $white;
+            }
+        }
+        .r-image{
+            width: 100%;
+            @include flex(row, flex-start, flex-end);
+            .r-machine-card{
+                width: 100%;
+                max-width: 360px;
+                @include flex(row, flex-start, center);
+                position: relative;
+                .card-machine{
+                    width: 100%;
+                    max-width: 350px;
+                    z-index:1;
+                    position: absolute;
+                    top: 70px;
+                }
+                .circle-yellow{
+                    position: absolute;
+                    z-index: 2;
+                    top: 24px;
+                    left: -18px;
+                }
+                .square-dots{
+                    position: absolute;
+                    z-index: 0;
+                    top: 30px;
+                    right: 50px;
+                }
+            }
+            .r-text{
+                width: 100%;
+                max-width: 16.2rem;
+                @include flex(column, center, center);
+                .r-title{
+                    color: $white;
+                }
+                .r-list{
+                    padding-top: 3.4rem;
+                    ul{
+                        li{
+                            width: 100%;
+                            padding-top: 14px;
+                            @include flex(row, flex-start, space-between);
+                            img{
+                                padding: 8px 19px 0px 0px;
+                            }
+                            p{
+                                font-size: 16px;
+                                line-height: 22px;
+                                letter-spacing: -0.02em;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+                .b-text{
+                    padding-top: 3.7rem;
+                    z-index: 2;
+                    @include flex(row, flex-start, space-between);
+                    img{
+                        padding: 5px 14px 0px 0px;
+                    }
+                    p{
+                        color: #FFFFFF;
+                        opacity: 0.8;
+                    }
+                } 
+                .rectangle{
+                    position: absolute;
+                    width: 100%;
+                    max-width: 300px;
+                    bottom: 0;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}
+.s-card{
+    width: 100%;
+    padding-top: 74px;
+    .container{
+        @include flex(row, center, center);
+        gap: 6.1rem;
+        .m-title{
+            width: 100%;
+            max-width: 112px;
+            h2{
+                color: $primary-brand-light;
+            }
+            h6{
+                color: $black-100;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                letter-spacing: -0.02em;
+            }
+            p{
+                margin-top: 0.4rem;
+                color: #495057;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+                letter-spacing: -0.02em;
+            }
+        }
+        .r-block{
+            @include flex(row, center, flex-start);
+            h6{
+                margin-left: 8.8rem;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                text-align: center;
+                letter-spacing: -0.02em;
+                color: #495057;
+            }
+            ul{
+                @include flex(row, center, center);
+                margin-left: 10.9rem;
+                gap: 5rem;
+                li{
+                    img{
+                        @include flex(row, center, center);
+                        margin: 0 auto;
+                    }
+                    p{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                        color: #495057;
+                        margin-top: 1.3rem;
+                    }
+                }
+                .r-arrow{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
