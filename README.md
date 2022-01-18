@@ -1,6 +1,6 @@
 # Landing Page SuperGet
 
-Link: 
+Link: lp-superget.netlify.app
 
 Website developed during the CodeBoost course. Assisted by William Moreira I have developed this landing page for the training purposes.
 
