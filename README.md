@@ -1,6 +1,6 @@
 # Landing Page SuperGet
 
-Link: lp-superget.netlify.app
+Link: https://ruivergani.github.io/lp-superget/
 
 Website developed during the CodeBoost course. Assisted by William Moreira I have developed this landing page for the training purposes.
 
