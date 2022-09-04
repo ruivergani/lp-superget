@@ -15,8 +15,12 @@
                 font-weight: bold;
                 color: $white;
                 padding-bottom: 2.5rem;
+                opacity: 0;
+                animation: leftRight 0.6s ease 0s 1 normal forwards;
             }
             .sub-text{
+                opacity: 0;
+                animation: leftRight 0.7s ease 0s 1 normal forwards;
                 p{
                     font-weight: 600;
                     color: $white;
@@ -44,11 +48,16 @@
             .h-buttons{
                 width: 100%;
                 margin-top: 3.6rem;
+                
                 @include flex(row, center, space-between);
                 .btn-secondary{
                     font-weight: bold;
+                    opacity: 0;
+                    animation: downUp 0.8s ease 0s 1 normal forwards;
                 }
                 a{
+                    opacity: 0;
+                    animation: downUp 0.8s ease 0s 1 normal forwards;
                     position: relative;
                     @include flex(row, center, center);
                     img{
@@ -74,12 +83,16 @@
                 padding-top: 1.3rem;
                 letter-spacing: -0.01em;
                 color: $white;
+                opacity: 0;
+                animation: downUp 1.1s ease 0s 1 normal forwards;
             }
         }
         .r-image{
             width: 100%;
             @include flex(row, flex-start, flex-end);
             .r-machine-card{
+                opacity: 0;
+                animation: downUp 1s ease 0s 1 normal forwards;
                 width: 100%;
                 max-width: 360px;
                 @include flex(row, flex-start, center);
@@ -105,6 +118,8 @@
                 }
             }
             .r-text{
+                opacity: 0;
+                animation: leftRight 1.4s ease 0s 1 normal forwards;
                 width: 100%;
                 max-width: 16.2rem;
                 @include flex(column, center, center);
@@ -192,12 +207,29 @@
                 text-align: center;
                 letter-spacing: -0.02em;
                 color: #495057;
+
             }
             ul{
                 @include flex(row, center, center);
                 margin-left: 10.9rem;
                 gap: 5rem;
                 li{
+                    opacity: 0; // brings back with the animation
+                    &:first-child{
+                        animation: leftRight 1s ease 0.7s 1 normal forwards;
+                    }
+                    &:nth-child(2){
+                        animation: leftRight 1s ease 0.7s 1 normal forwards;
+                    }
+                    &:nth-child(3){
+                        animation: leftRight 1s ease 0.9s 1 normal forwards;
+                    }
+                    &:nth-child(4){
+                        animation: leftRight 1s ease 0.9s 1 normal forwards;
+                    }
+                    &:nth-child(5){
+                        animation: leftRight 1s ease 1.2s 1 normal forwards;
+                    }
                     img{
                         @include flex(row, center, center);
                         margin: 0 auto;
