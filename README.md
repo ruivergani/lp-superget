@@ -12,3 +12,6 @@ Features:
 * Swipper Slide JS.
 * Design created on Figma
 * Date created: 2022
+
+
+![Screenshot 2022-10-03 at 15 50 19](https://user-images.githubusercontent.com/70537459/193607766-d6552ca3-7af9-4516-bcb4-23acd0983609.png)
